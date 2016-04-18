@@ -27,7 +27,7 @@
     $qry = "select id from admin where name = '".$name."' and password = '".$passwd."'";
     $result = mysql_query($qry, $conn);
     $result = mysql_fetch_object($result);
-    return $result->id;
+    return $result;
   }
 
   function login($name, $passwd) {
@@ -36,9 +36,9 @@
     mysql_select_db($database, $conn) or die (mysql_error());
 
     // 判断用户名是否存在
-    $userId = getUserId($conn, $name, $passwd);
-    if ($userId) {
-      $_SESSION['admin']['id'] = $userId;
+    $user = getUserId($conn, $name, $passwd);
+    if ($user) {
+      $_SESSION['admin']['id'] = $user->id;
       $_SESSION['admin']['name'] = $name;
       redirect2index();
       return;
