@@ -36,11 +36,14 @@ body,html{height:100%}
   
   <ul>
       <li class="tit">用户管理</li>
-      <!--li><a href="editinfo.php" target="mainFrame">
-        <span class="glyphicon glyphicon-edit" aria-hidden="true"></span> 所有用户</a>
-      </li-->
+      <li><a href="listusers.php" target="mainFrame">
+        <span class="glyphicon glyphicon-user" aria-hidden="true"></span> 所有用户</a>
+      </li>
+  </ul>
+  <ul>
+      <li class="tit">信息管理</li>
       <li><a href="changepasswd.php" target="mainFrame">
-        <span class="glyphicon glyphicon-edit" aria-hidden="true"></span> 修改密码</a>
+        <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> 修改密码</a>
       </li>
   </ul>
   </div>
