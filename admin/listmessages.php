@@ -36,7 +36,7 @@ if (!isset($_SESSION['admin']['id'])) {
   $conn = mysql_connect($dbhost, $dbuser, $dbpassword, $database) or die (mysql_error());
   mysql_select_db($database, $conn) or die (mysql_error());
 
-  $qry = "select * from message order by create_time desc";
+  $qry = "select m.*, u.name from message m, user u where m.user_id=u.id order by create_time desc";
   $result = mysql_query($qry, $conn);
   $rowNum = mysql_num_rows($result);
   
@@ -72,7 +72,7 @@ if (!isset($_SESSION['admin']['id'])) {
 ?>
   <tr>
     <td><?php echo $row['title'] ?></td>
-    <td align="center">用户</td>
+    <td align="center"><?php echo $row['name'] ?></td>
     <td align="center"><?php echo $row['create_time'] ?></td>
     <td align="center"><?php if($row['reply']) { echo "是";} else { echo "否";} ?></td>
     <td align="center">

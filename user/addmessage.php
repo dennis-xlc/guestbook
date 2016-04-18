@@ -42,7 +42,7 @@ if (!isset($_SESSION['user']['id'])) {
   }
 
   function redirect2Mymessages() {
-    echo '<script type="text/javascript">alert("恭喜您，添加留言成功！");window.location.href = "./listmessage.php";</script>';
+    echo '<script type="text/javascript">alert("恭喜您，添加留言成功！");window.location.href = "./listmessages.php";</script>';
   }
 
   function createMessage($userId, $title, $content) {

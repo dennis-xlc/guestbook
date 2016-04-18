@@ -34,7 +34,7 @@ body,html{height:100%}
       <li class="tit">用户管理</li>
       <li><a href="myinfo.php" target="mainFrame"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> 个人信息</a></li>
       <li><a href="editinfo.php" target="mainFrame"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span> 修改信息</a></li>
-      <li><a href="changepasswd.php" target="mainFrame"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span> 修改密码</a></li>
+      <li><a href="changepasswd.php" target="mainFrame"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> 修改密码</a></li>
   </ul>
   </div>
 </div>

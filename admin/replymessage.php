@@ -45,7 +45,7 @@ if (!isset($_GET['mid'])) {
   }
 
   function redirect2Message($messageId) {
-    echo '<script type="text/javascript">alert("恭喜您，编辑留言成功！");window.location.href = "./message.php?mid='.$messageId.'";</script>';
+    echo '<script type="text/javascript">alert("恭喜您，回复留言成功！");window.location.href = "./message.php?mid='.$messageId.'";</script>';
   }
 
   function updateMessage($messageId, $reply) {
